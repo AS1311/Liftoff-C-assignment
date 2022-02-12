@@ -1,15 +1,14 @@
 #include<stdio.h>
-
 int main()
-{   int rn ; char n, b, h;
+{  int rn; char n[100],h[100],b[100];
     printf("enter name= ") ;
-    scanf("%s", n);
-    printf("enter regd. number= ") ;
-    scanf("%d", &rn) ;
+    gets(n);
     printf("enter branch= ") ;
-    scanf("%s", b) ;
+    gets(b) ;
     printf("enter hobbies= ") ;
-    scanf("%s", h) ;
-    printf("\n\n name=%s \n Regd.no=%d \n branch=%s \n Hobbies=%s \n",n, rn, b, h);
+    gets(h) ;
+    printf ("enter regd. number= ") ;
+   scanf("%d", &rn) ;
+    printf("\n\n name=%s \n regd. No=%d \n brabch=%s \n hobbies=%s", n,rn, b, h) ;
     return 0;
 }
